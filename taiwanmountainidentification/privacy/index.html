@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+    <title>台灣山岳識別 - 隱私權政策</title>
+    <style>
+    	@charset "UTF-8";
+		* {
+			-webkit-tap-highlight-color: transparent;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			-webkit-overflow-scrolling: touch;
+		}
+		::-moz-selection {
+			background: #7EBC32;
+		}
+		::selection {
+			background: #7EBC32;
+		}
+		a {
+			cursor: pointer;
+			text-decoration: none;
+			color: #7EBC32;
+			overflow-wrap: anywhere;
+		}
+		a:active {
+			opacity: 0.75;
+		}
+    	html, body, input, button, select, textarea {
+			color: #888888;
+			font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+		}
+		html, body {
+			overflow-x: hidden;
+			background-color: #FFFFFF;
+		}
+		body {
+			margin: 0px;
+			height: auto;
+			font-size: 16px;
+		}
+		#header {
+			color: #FFFFFF;
+			width: 100%;
+			background-color: #7EBC32;
+			font-size: 30px;
+			padding: 25px;
+			padding-bottom: 30px;
+		    padding-top: max(30px, constant(safe-area-inset-bottom));
+		    padding-top: max(30px, env(safe-area-inset-bottom));
+		}
+		#content {
+			background-color: #FFFFFF;
+			padding-left: 25px;
+			padding-right: 25px;
+			position: relative;
+		    padding-bottom: max(3px, constant(safe-area-inset-bottom));
+		    padding-bottom: max(3px, env(safe-area-inset-bottom));
+		}
+		.item {
+			padding-top: 22px;
+			padding-bottom: 22px;
+			border-bottom: 1px solid #DDDDDD;
+		}
+		.item.end {
+			border-bottom: 0px solid #DDDDDD;
+		}
+		.subitem {
+			margin-bottom: 15px;
+		}
+		.subitem.end {
+			margin-bottom: 0px;
+		}
+		.item .title {
+			margin-bottom: 10px;
+			font-size: 18px;
+			color: #555555;
+			font-weight: bold;
+		}
+		.item .subtitle {
+			margin-bottom: 5px;
+			color: #555555;
+			font-size: 18px;
+		}
+		.item.end .info {
+			margin-top: 5px;
+		}
+		#padding-bottom {
+			background-color: #FFFFFF;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		隱私權政策
+	</div>
+	<div id="content">
+		<div class="item">
+			<div class="title">資料存取</div>
+			<div class="info">
+				本程式會儲存部分操作設定，讓使用者下次開啟APP的時候可以保留設定值，這些資訊只會儲存在本機，不會傳送出去。
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">使用的權限</div>
+			<div class="subitem">
+				<div class="subtitle">相機</div>
+				<div class="info">
+					這是一款將相機所拍攝的真實山景，以及虛擬的山形輪廓結合而成的AR應用程式，所以需要提供相機權限。
+				</div>
+			</div>
+			<div class="subitem">
+				<div class="subtitle">位置</div>
+				<div class="info">
+					本程式是依照使用者的位置來呈現周圍的山形輪廓，所以需要提供位置權限，只有在APP開啟的狀態下才會抓取當前的位置資訊，不會在背景執行。
+				</div>
+			</div>
+			<div class="subitem end">
+				<div class="subtitle">儲存裝置</div>
+				<div class="info">
+					首次拍攝照片時，系統會要求提供此權限，才可以將拍攝的相片保存在手機相簿裡，但Android 10以後的版本不需要此權限也可以保存相片。
+				</div>
+			</div>
+		</div>
+		<div class="item end">
+			<div class="title">廣告</div>
+			<div class="info">
+				本程式播放的廣告是使用Google提供的AdMob服務，AdMob可能會自動取得用戶資訊，例如廣告識別碼(iOS用戶可自行決定是否要提供)，詳細內容請參閱下列Google廣告隱私權政策連結。
+			</div>
+			<div class="info">
+				<a href="https://policies.google.com/technologies/ads?hl=zh-TW" target="_blank">https://policies.google.com/technologies/ads?hl=zh-TW</a>
+			</div>
+		</div>
+	</div>
+	<div id="padding-bottom"></div>
+</body>
+
+</html>
