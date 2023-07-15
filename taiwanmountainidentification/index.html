@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+	<meta HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:03 GMT">
     <title>台灣山岳識別</title>
     <style>
     	@charset "UTF-8";
@@ -37,7 +37,7 @@
 		}
 		html, body {
 			overflow-x: hidden;
-			background-color: #FFFFFF;
+			background-color: #7EBC32;
 		}
 		body {
 			margin: 0px;
@@ -54,6 +54,7 @@
 			position: fixed;
 			top: 0px;
 			width: 100%;
+			/*z-index: 1;*/
 		}
 		.nav > div {
 			position: relative;
@@ -64,7 +65,7 @@
 			background-color: #7EBC32;
 			z-index: 3;
 		}
-		.back {
+		/*.back {
 			z-index: 2;
 		}
 		#back {
@@ -88,7 +89,7 @@
 			transform: translate(-50%, -50%);
 			width: 55%;
 			height: 55%;
-		}
+		}*/
 		.header {
     		pointer-events: none;
 			height: 240px;
@@ -98,14 +99,6 @@
 			position: relative;
 		    /*padding-top: max(25px, constant(safe-area-inset-top));
 		    padding-top: max(25px, env(safe-area-inset-top));*/
-		}
-		.green {
-			position: absolute;
-			background-color: #7EBC32;
-			bottom: 0px;
-			width: 100%;
-			height: 600px;
-    		transform: translate(0%, 100%);
 		}
 		#mountain {
 			width: 100%;
@@ -226,11 +219,9 @@
 	<div id="header-background">
 		<div class="status-bar"></div>
 		<div class="header"></div>
-		<div class="green"></div>
 	</div>
 	<div class="nav">
 		<div class="status-bar"></div>
-		<!--<div><img id="logo" src="logo.png"></div>-->
 		<div>
 			<div id="logo">
 				<img src="logo.png">
