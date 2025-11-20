@@ -3,12 +3,12 @@
 <html>
 
 <head>
-    <meta charset="utf-8" name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta charset="utf-8" name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:03 GMT">
-    <title>台灣山岳識別</title>
-    <style>
-    	@charset "UTF-8";
+	<title>台灣山岳識別</title>
+	<style>
+		@charset "UTF-8";
 		* {
 			-webkit-tap-highlight-color: transparent;
 			-webkit-box-sizing: border-box;
@@ -31,7 +31,7 @@
 		a:active {
 			opacity: 0.75;
 		}
-    	html, body, input, button, select, textarea {
+		html, body, input, button, select, textarea {
 			color: #888888;
 			font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
 		}
@@ -91,14 +91,14 @@
 			height: 55%;
 		}*/
 		.header {
-    		pointer-events: none;
+			pointer-events: none;
 			height: 240px;
 			/*background-color: #7EBC32;*/
 			padding-left: 15px;
 			padding-right: 15px;
 			position: relative;
-		    /*padding-top: max(25px, constant(safe-area-inset-top));
-		    padding-top: max(25px, env(safe-area-inset-top));*/
+			/*padding-top: max(25px, constant(safe-area-inset-top));
+			padding-top: max(25px, env(safe-area-inset-top));*/
 		}
 		#mountain {
 			width: 100%;
@@ -128,7 +128,7 @@
 			text-align: center;
 			color: #FFFFFF;
 			/*font-weight: bold;*/
-    		font-size: 18px;
+			font-size: 18px;
 		}
 		#logo img {
 			width: 90px;
@@ -139,11 +139,11 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			position: relative;
-		    padding-bottom: max(3px, constant(safe-area-inset-bottom));
-		    padding-bottom: max(3px, env(safe-area-inset-bottom));
+			padding-bottom: max(3px, constant(safe-area-inset-bottom));
+			padding-bottom: max(3px, env(safe-area-inset-bottom));
 			display: flex;
 			flex-direction: column;
-    		align-items: center;
+			align-items: center;
 		}
 		#content > div {
 			max-width: 900px;
@@ -159,8 +159,8 @@
 		}
 		.item.top .info {
 			color: #7EBC32;
-    		font-weight: bold;
-    		font-size: 20px;
+			font-weight: bold;
+			font-size: 20px;
 		}
 		.item.end {
 			border-bottom: 0px solid #DDDDDD;
@@ -198,19 +198,19 @@
 		$(function() {
 			/*if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform))
 				$('.android').hide();*/
-            function scroll() {
-            	$('#logo').css('top', Math.max(115 - $(this).scrollTop() / 2, 0) + 'px');
-            }
-            scroll();
-            $(document).scroll(function() {
-                scroll();
-            });
-            function resize() {
-            	$('#mountain>img').css('max-height', (window.innerWidth / 8) + 'px');
-            }
-            resize();
-            window.addEventListener('resize', resize, false);
-            $('body').css('visibility', 'visible');
+			function scroll() {
+				$('#logo').css('top', Math.max(115 - $(this).scrollTop() / 2, 0) + 'px');
+			}
+			scroll();
+			$(document).scroll(function() {
+				scroll();
+			});
+			function resize() {
+				$('#mountain>img').css('max-height', (window.innerWidth / 8) + 'px');
+			}
+			resize();
+			window.addEventListener('resize', resize, false);
+			$('body').css('visibility', 'visible');
 		});
 	</script>
 </head>
